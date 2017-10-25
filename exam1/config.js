@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var http = require('http');
 var fs = require('fs');
 
@@ -22,28 +21,3 @@ function onRequest(request, response){
 
 http.createServer(onRequest).listen(3000);
 console.log("Server is now running");
-=======
-var http = require('http');
-var fs = require('fs');
-
-//404 response
-function send404Error(response){
-    response.writeHead(404, {"Content-Type": "text/plain"});
-    response.write("Error 404: Page Not Found");
-    response.end();
-}
-
-function onRequest(request, response){
-    if (request.method == 'GET' && request.url == '/'){
-        response.writeHead(200, {"Content-Type": "text/html"});
-        fs.createReadStream("./index.html").pipe(response);
-
-}else {
-    send404Error(response);
-}
-
-}
-
-http.createServer(onRequest).listen(3000);
-console.log("Server is now running");
->>>>>>> 4f888980606dd5513fe234151e6f30cb31a13a38
