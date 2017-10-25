@@ -1,0 +1,19 @@
+{
+  "name": "exam1",
+  "version": "1.0.0",
+  "description": "exam one",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ToDo"
+  },
+  "author": "Daniel Villanueva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1"
+  }
+}

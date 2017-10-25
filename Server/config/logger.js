@@ -13,20 +13,22 @@ var winston = require('winston');
             colorize: true,
             level: env === 'development' ? 'verbose' : 'info',
         }),
+      ]
+    });
 
  new (require('winston-daily-rotate-file'))({
-                name: 'logFile',
-                filename: `${logDir}/-results.log`,
-                prepend: true,
-                level: env === 'development' ? 'verbose' : 'info'
-            })
-        ]
-        });
-        log = function(message, level){
+              name: 'logFile',
+              filename: `${logDir}/-results.log`,
+              prepend: true,
+              level: env === 'development' ? 'verbose' : 'info'
+          })
+
+  
+      log = function(message, level){
             level = level || 'info';
             logger.log(level, message);
         };
-        exports.log = log;
+        exports.log = log;
     
 
     
