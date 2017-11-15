@@ -1,6 +1,9 @@
 var http = require('http');
 var fs = require('fs');
+//var express = require('express');
+//var path = require('path');
 
+//app.use(express.static(path.normalize(__dirname) + '/public'))
 //404 response
 function send404Error(response){
     response.writeHead(404, {"Content-Type": "text/plain"});

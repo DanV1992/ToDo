@@ -7,7 +7,12 @@ development: {
             root: rootPath,    
             app: {      name: ' ToDo'    },    
             port: 5000, 
-          db: 'mongodb://127.0.0.1/todo-dev'
+          db: 'mongodb://127.0.0.1/todo-dev',
+          secret: "danielv1992"
+
+        
+          
+        
 
  },  
  production: {    
@@ -16,8 +21,11 @@ development: {
                port: 80, 
                db: 'mongodb://127.0.0.1/todo'
               }
+
+              
   };
 
+  
   
 
 module.exports = config[env];

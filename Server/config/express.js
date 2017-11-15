@@ -5,8 +5,12 @@ var bluebird = require('bluebird');
 var glob = require('glob');
 var bodyParser = require('body-parser');
 var logger = require('./logger');
+var cors = require('cors');
+
 
 module.exports = function (app, config) {
+  
+  app.use(cors({origin: 'http://localhost:9000'}));
 
   logger.log('Loading Mongoose functionality');
   mongoose.Promise = require('bluebird');
@@ -35,7 +39,7 @@ app.use(bodyParser.json({limit: '1000mb'}));
 app.use(bodyParser.urlencoded({limit: '1000mb', extended: true}));
 
 logger.log("Loading models");
-var models = glob.sync(config.root + '/app/controllers/*.js');
+var models = glob.sync(config.root + '/app/models/*.js');
 models.forEach(function (model) {
   require(model);
 });
@@ -54,12 +58,18 @@ app.use(express.static(config.root + '/public'));
   });
 
   app.use(function (err, req, res, next) {
-    console.error(err.stack);
+    console.log(err);
+    if (process.env.NODE_ENV !== 'test') logger.log(err.stack,'error');
     res.type('text/plan');
-    res.status(500);
-    res.send('500 Server Error');
+    if(err.status){
+      res.status(err.status).send(err.message);
+    } else {
+      res.status(500).send('500 Sever Error');
+    }
   });
 
   logger.log("Starting application");
 
 };
+
+
