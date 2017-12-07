@@ -1,5 +1,8 @@
 <template>
         <h1>${message}</h1>
+    <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">ToDos</span>
+          </nav>
         <compose show.bind="showLogin" view="./components/login.html"></compose>
         <compose show.bind="!showLogin" view="./components/register.html"></compose>
     </template>

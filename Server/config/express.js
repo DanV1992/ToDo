@@ -46,7 +46,7 @@ models.forEach(function (model) {
 
 var controllers = glob.sync(config.root + '/app/controllers/*.js');
 controllers.forEach(function (controller) {
-  require(controller)(app, config);
+  require(controller)//(app, config);
 });
 
 app.use(express.static(config.root + '/public'));
