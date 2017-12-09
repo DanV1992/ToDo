@@ -6,8 +6,10 @@ jwtStrategy = require('passport-jwt').Strategy,
 extractJwt = require('passport-jwt').ExtractJwt,
 localStrategy = require('passport-local');
 
-
 var localOptions = { usernameField: 'email' };
+
+
+
 
 var localLogin = new localStrategy(localOptions, function(email, password, next){
 	User.findOne({email: email}).exec()
@@ -50,4 +52,7 @@ setUserInfo = function(req){
     res.status(200).json({ token: generateToken(userInfo), user: req.user  });
   };
 
+
+
 passport.use(localLogin);
+// passport.use(jwtLogin);

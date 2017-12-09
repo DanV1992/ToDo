@@ -1,7 +1,10 @@
 import environment from './environment';
 import config from './auth-config';
+
 import regeneratorRuntime from 'regenerator-runtime';
 window.regeneratorRuntime = regeneratorRuntime;
+
+
 
 export function configure(aurelia) {
   aurelia.use
