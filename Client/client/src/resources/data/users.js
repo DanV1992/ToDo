@@ -4,7 +4,7 @@ import {DataServices} from './data-services';
 @inject(DataServices)
 export class Users {
 
-constructor(data) {
+constructor(data) {
         this.data = data;
 
         this.USER_SERVICE = 'users';

@@ -1,2 +1,40 @@
 {"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-09T06:14:33.388Z"}
 {"level":"info","message":"Mongoose connected to the database","timestamp":"2017-12-09T06:14:33.801Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-09T06:21:36.585Z"}
+{"level":"info","message":"Mongoose connected to the database","timestamp":"2017-12-09T06:21:36.899Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T06:22:35.825Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-12-09T06:22:35.910Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T06:22:44.383Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T06:22:44.561Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-09T06:22:44.562Z"}
+{"level":"info","message":"Loading Mongoose functionality","timestamp":"2017-12-09T17:05:36.601Z"}
+{"level":"info","message":"Mongoose connected to the database","timestamp":"2017-12-09T17:05:37.094Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:06:48.813Z"}
+{"level":"verbose","message":"Create User","timestamp":"2017-12-09T17:06:48.840Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:07:01.981Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:07:02.229Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-09T17:07:02.233Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:07:17.023Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:07:17.189Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-09T17:07:17.190Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:08:19.842Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-09T17:08:19.845Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:08:44.691Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:08:44.855Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-09T17:08:44.856Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:08:51.050Z"}
+{"level":"verbose","message":"Update todo 5a2c1883a539b64c3cf7f9d8","timestamp":"2017-12-09T17:08:51.055Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:11:13.847Z"}
+{"level":"verbose","message":"Create ToDo","timestamp":"2017-12-09T17:11:13.848Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:11:13.887Z"}
+{"level":"verbose","message":"Upload file for todo 5a2c1931a539b64c3cf7f9d9 and 5a2c1828a539b64c3cf7f9d7","timestamp":"2017-12-09T17:11:13.918Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:14:04.711Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:14:04.860Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-09T17:14:04.860Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:14:31.728Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-09T17:14:31.730Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:15:34.296Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-09T17:15:34.296Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:29:11.297Z"}
+{"level":"info","message":"Request from ::1","timestamp":"2017-12-09T17:29:11.450Z"}
+{"level":"verbose","message":"Get all todos","timestamp":"2017-12-09T17:29:11.451Z"}
